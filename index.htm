@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<meta name="description" content="Free "New Updates" Countdown Project by Gabriel " />
+<meta name="keywords" content="coming soon, launch page, template" />
+<meta name="author" content="Studio VIVROCKS" />
+<link rel="shortcut icon" href="images/favicon.png" type="image/png" />
+<title>Gabriel Count Down</title>
+<body background="images/bg.jpg">
+
+
+
+<link rel="stylesheet" type="text/css" href="style.css">
+
+<!--------------------------------------------GET jQuery-------------------------------------------------------------------->
+<script type="text/javascript" src="js/jQuery.js"></script>
+
+<!--------------------------------------------CUFON-------------------------------------------------------------------->
+<script type="text/javascript" src="js/cufon-yui.js"></script>
+<script type="text/javascript" src="js/League.Gothic.font.js"></script>
+<script type="text/javascript">
+	Cufon.replace('h1,h2,h3,#logo');
+</script>
+
+<!--------------------------------------------COUNTDOWN-------------------------------------------------------------------->
+<script src="js/jquery.countdown.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript" charset="utf-8">
+	$(function() {
+	// *************************************************** EDIT DATE IN LINE BELOW ******************************************			   
+	$('div#clock').countdown("2014/12/20" , function(event) {
+	var $this = $(this);
+	switch(event.type) {
+	case "seconds":
+	case "minutes":
+	case "hours":
+	case "days":
+	case "weeks":
+	case "daysLeft":
+	$this.find('span#'+event.type).html(event.value);
+	break;
+	case "finished":
+	$this.hide();
+	break;
+	}
+	});
+	});
+</script>
+
+</head>
+
+<body>
+<div id="wrapper">
+<!--------------------------------------------Edit Company Name Here-------------------------------------------------------------------->
+	<div align="center"><IMG src="images/logo.png"></div>
+    <div style="clear:both"></div>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+    <div id="frame">
+    <div id="sizewrap">
+    
+        <h1>Update</h1>
+        <h2>New Instance Siege of Orgrimmar!</h2>
+    <br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	
+        <div id="clock">
+            <div class="block"><span id="weeks"></span>WEEKS</div>
+                <div class="space">&nbsp;</div>
+            
+            <div class="block"><span id="daysLeft"></span>DAYS</div>
+                <div class="space">&nbsp;</div>
+            
+            <div class="block"><span id="hours"></span>HOURS</div>
+                <div class="space">&nbsp;</div>
+            
+            <div class="block"><span id="minutes"></span>MINUTES</div>
+                <div class="space">&nbsp;</div>
+            
+            <div class="block"><span id="seconds"></span>SECONDS</div>
+        </div>
+
+        <div style="clear:both"></div>
+        
+        </div>
+    </div>
+    
+    <div id="footer">Designed by <a href="http://ac-web.org">Gabriel</a></div>
+                
+</div>
+</body>
+</html>

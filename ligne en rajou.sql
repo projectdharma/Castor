@@ -1,0 +1,1 @@
+INSERT INTO `news` VALUES ('97', 'Welcome!', '<p><span style=\"color: white\">This is your new awesome website. Please be sure to LEAVE THE FOOTER ALONE! and +rep Jeutie on AC-Web if you like the release. Contact Evil! If you want custom logos or images. Enjoy!</span></p>', '0', '1299865425', 'March 11, 2011', 'admin');
